@@ -10,11 +10,11 @@ module.exports = {
 
 	onChat: async ({ api, event }) => {
 		try {
-			if (event.isGroup)
+			if (event.threadID && event.senderID)
 				api.markAsRead(event.threadID);
 		}
-		catch (err) {
-			console.log("Auto Seen Error:", err);
+		catch (e) {
+			console.log(e);
 		}
 	}
 };
