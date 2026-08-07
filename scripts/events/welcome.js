@@ -19,7 +19,8 @@ module.exports = {
     welcomeMessage: "Cảm ơn bạn đã mời tôi vào nhóm!\nPrefix bot: %1\nĐể xem danh sách lệnh hãy nhập: %1help",
     multiple1: "bạn",
     multiple2: "các bạn",
-    defaultWelcomeMessage: `╔═══════『 👑 VIP WELCOME 👑 』═══════╗
+    defaultWelcomeMessage: 
+`╔═══════『 👑 VIP WELCOME 👑 』═══════╗
 
 🎉 Welcome {userNameTag}
 
