@@ -10,28 +10,73 @@ module.exports = {
 		category: "events"
 	},
 
-	langs: {
-		vi: {
-			session1: "sáng",
-			session2: "trưa",
-			session3: "chiều",
-			session4: "tối",
-			welcomeMessage: "Cảm ơn bạn đã mời tôi vào nhóm!\nPrefix bot: %1\nĐể xem danh sách lệnh hãy nhập: %1help",
-			multiple1: "bạn",
-			multiple2: "các bạn",
-			defaultWelcomeMessage: "Xin chào {userName}.\nChào mừng bạn đến với {boxName}.\nChúc bạn có buổi {session} vui vẻ!"
-		},
-		en: {
-			session1: "morning",
-			session2: "noon",
-			session3: "afternoon",
-			session4: "evening",
-			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
-			multiple1: "you",
-			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
-		}
-	},
+ langs: {
+  vi: {
+    session1: "sáng",
+    session2: "trưa",
+    session3: "chiều",
+    session4: "tối",
+    welcomeMessage: "Cảm ơn bạn đã mời tôi vào nhóm!\nPrefix bot: %1\nĐể xem danh sách lệnh hãy nhập: %1help",
+    multiple1: "bạn",
+    multiple2: "các bạn",
+    defaultWelcomeMessage: `╔═══════『 👑 VIP WELCOME 👑 』═══════╗
+
+🎉 Welcome {userNameTag}
+
+💎 A New Member Has Joined Our Family
+
+🏡 Group Name: {boxName}
+🕒 Session: {session}
+
+━━━━━━━━━━━━━━━━━━
+
+🌟 Respect Everyone
+🤝 Make New Friends
+💬 Stay Active
+✨ Enjoy Your Stay
+
+━━━━━━━━━━━━━━━━━━
+
+🔥 We're Happy To Have You Here 🔥
+
+❤️ Welcome To The Family ❤️
+
+╚═══════『 🌸 HAVE FUN 🌸 』═══════╝`
+  },
+
+  en: {
+    session1: "morning",
+    session2: "noon",
+    session3: "afternoon",
+    session4: "evening",
+    welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
+    multiple1: "you",
+    multiple2: "you guys",
+    defaultWelcomeMessage: `╔═══════『 👑 VIP WELCOME 👑 』═══════╗
+
+🎉 Welcome {userNameTag}
+
+💎 A New Member Has Joined Our Family
+
+🏡 Group Name: {boxName}
+🕒 Session: {session}
+
+━━━━━━━━━━━━━━━━━━
+
+🌟 Respect Everyone
+🤝 Make New Friends
+💬 Stay Active
+✨ Enjoy Your Stay
+
+━━━━━━━━━━━━━━━━━━
+
+🔥 We're Happy To Have You Here 🔥
+
+❤️ Welcome To The Family ❤️
+
+╚═══════『 🌸 HAVE FUN 🌸 』═══════╝`
+  }
+},
 
 	onStart: async ({ threadsData, message, event, api, getLang }) => {
 		if (event.logMessageType == "log:subscribe")
